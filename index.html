@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluentTrainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="trainer-container">
+        <header class="trainer-header">
+            <h1><i class="fas fa-bolt"></i> FluentTrainer</h1>
+            <p>Train your answers. Improve your impact.</p>
+        </header>
+        <main class="main-content">
+            <section class="scenario-box" id="scenario-box"></section>
+            <section class="response-section">
+                <label for="user-response" class="response-label">Jouw Reactie:</label>
+                <textarea class="response-area" id="user-response" placeholder="Schrijf hier je reactie op de klant..."></textarea>
+                <div class="word-counter" id="word-counter">0 / 500 woorden</div>
+                <div class="controls">
+                    <button class="btn" id="analyze-btn"><i class="fas fa-search"></i> Analyseer Mijn Reactie</button>
+                    <button class="btn btn-secondary" id="next-scenario-btn"><i class="fas fa-sync-alt"></i> Nieuw Scenario</button>
+                </div>
+            </section>
+            <section class="analysis-section" id="analysis-section">
+                <h3 class="analysis-header"><i class="fas fa-chart-bar"></i> Jouw Feedback & Scores</h3>
+                <div class="score-row" id="score-row"></div>
+                <div class="feedback-grid" id="feedback-grid"></div>
+                <div class="example-section">
+                    <h3 class="example-title">Voorbeeldreactie van FoneFluent:</h3>
+                    <div class="example-content" id="example-content"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            FoneFluent 2025<br>
+            FluentTrainer™ is eigendom en een geregistreerd product van FoneFluent - alle rechten voorbehouden.
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
